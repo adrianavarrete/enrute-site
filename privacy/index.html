@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enrute Privacy Policy</title>
+<meta name="description" content="Enrute routes your links on your Mac. It collects nothing, makes no network requests and keeps no history.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<p class="back"><a href="../">Enrute</a></p>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective November 15, 2026</p>
+
+<p class="summary">Enrute does not collect, send or share any data. Everything it works with stays on your Mac. It makes no network requests, has no analytics or tracking, and keeps no history of the links you open.</p>
+
+<h2>What Enrute works with on your Mac</h2>
+<p>Enrute is a Mac app that becomes your default browser and opens each link in the Google Chrome profile chosen by your rules. To do that it handles the following, only on your Mac:</p>
+<ul>
+<li><strong>The links you open.</strong> When you click a link, Enrute reads its address and the app it came from, compares them with your rules and hands the link to Chrome, or to Safari if Chrome is not installed. Links are not saved anywhere, and Enrute keeps no list of the links you have opened. Links you paste in the Test field are only checked against your rules and are not saved either.</li>
+<li><strong>Your rules.</strong> Each rule's name, URL conditions, source apps and Chrome profile are saved in a file named <code>rules.json</code> inside Enrute's own folder on your Mac.</li>
+<li><strong>Your Chrome profiles.</strong> To show your profiles and open links in them, Enrute reads the names, folders and colors of your Chrome profiles from Chrome's <code>Local State</code> file. It does not read your browsing history, bookmarks, passwords, cookies or any other Chrome data.</li>
+<li><strong>Your apps.</strong> When you add a source app to a rule, Enrute lists the apps that are running or installed on your Mac so that you can pick one. That list is not saved; only the apps you add to a rule are.</li>
+<li><strong>Settings.</strong> A few preferences, such as whether Enrute shows in the Dock and which notices you have already seen, are saved in Enrute's macOS preferences.</li>
+</ul>
+
+<h2>The Chrome helper</h2>
+<p>macOS does not let an App Store app tell Chrome which profile to use. So, with your confirmation, Enrute installs a small helper script in its Application Scripts folder (<code>~/Library/Application Scripts/com.adrianavarrete.Enrute</code>). The helper does only two things: it opens a link in the Chrome profile Enrute chose, and it reads Chrome's <code>Local State</code> file so that Enrute can list your profiles. It runs on your Mac and sends nothing anywhere. You can see its full contents by opening the file in any text editor.</p>
+
+<h2>No network access</h2>
+<p>Enrute runs in the macOS App Sandbox and is not granted network access. It does not contact any server, including the developer's, and contains no analytics, advertising or crash-reporting code.</p>
+
+<h2>System logs</h2>
+<p>Like other Mac apps, Enrute writes short messages to the macOS system log to help diagnose problems, for example which Chrome profile a link was sent to. The link's address and the rule's name are marked private, so macOS hides them in the log. The log stays on your Mac and is managed by macOS.</p>
+
+<h2>Other parties</h2>
+<ul>
+<li><strong>Browsers.</strong> Chrome and Safari receive the links Enrute opens, just as they would if they were your default browser. What they do with them is covered by their own privacy policies.</li>
+<li><strong>Apple.</strong> If you get Enrute from the Mac App Store, Apple handles your download and purchase under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. If you have chosen to share analytics with app developers in macOS, Apple may give the developer crash reports and anonymous usage statistics. Enrute itself sends nothing.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>You can delete a rule at any time in Enrute's settings. To remove everything Enrute has saved:</p>
+<ol>
+<li>Choose another default web browser in System Settings → Desktop &amp; Dock.</li>
+<li>Quit Enrute from its menu bar menu, and turn off Launch at login in its settings if you turned it on.</li>
+<li>Delete Enrute from your Applications folder.</li>
+<li>In Finder, choose Go → Go to Folder, and delete these two folders if they are still there:
+<ul>
+<li><code>~/Library/Containers/com.adrianavarrete.Enrute</code> (rules and settings)</li>
+<li><code>~/Library/Application Scripts/com.adrianavarrete.Enrute</code> (the Chrome helper)</li>
+</ul>
+</li>
+</ol>
+
+<h2>Children</h2>
+<p>Enrute collects no data from anyone, including children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be published on this page with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Enrute is developed by Adrià Navarrete. For questions about this policy, <a href="https://github.com/adrianavarrete/enrute-site/issues">open an issue on GitHub</a>.</p>
+</main>
+</body>
+</html>
